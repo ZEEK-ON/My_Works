@@ -1,0 +1,249 @@
+	/* 初期設定　*/
+html,body{
+	height: 100%;
+}
+
+html{
+	font-size: 62.5%;
+	box-sizing: border-box;
+	background: #f4f1e9;
+	max-width: 100%;
+}
+
+body{
+	font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","Segoe UI","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+}
+.g2{
+	font-family: GSanSerif-B;
+}
+/* ヘッダー　*/
+.logo img{
+	width: 140px;
+	height: 110px;
+}
+header .logo{
+	margin-top: 30px;
+	transform: translate(-9.5vw,0);
+}
+header{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	height: 150px;
+	width: 100%;
+	margin: 0 auto;
+}
+header .Nav{
+	margin-top: 30px;
+	transform: translate(9.5vw,0);
+}
+.Nav{
+	position: relative;
+	border-radius: 20px;
+	width: 900px;
+	height: 90px;
+	background-color:white;
+	/*後でJS付け加える*/
+	padding : 0 5px 0 5px;
+}
+.Nav ul{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.Nav li{
+	text-align: center;
+	width: 200px;
+	position: relative;
+}
+.Nav li:first-child{
+	width: 260px;
+}
+.Nav li:nth-of-type(2){
+	width: 240px;
+	border-right: none;
+}
+.Nav a{
+	height: 90px;
+	text-decoration: none;
+	line-height: 4.5;
+	color: #00a968;
+	font-size: 2rem;
+	display: block;
+}
+.Nav a:hover{
+	color: #00A920;
+}
+.Nav li::before{
+	display: block;
+	content: '';
+	position: absolute;
+	top: 19px;
+	left: -1px;
+	background: url(../img/navi_dot.svg)repeat-y;
+	background-size: 2px 6px;
+	width: 2px;
+	height: 57px;
+}
+.Nav li:first-child::before{
+	background: none;
+}
+/* メイン　*/
+	/*アバウト*/
+#main{
+	width: auto;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	position: absolute;
+}
+
+.align{
+	text-align: center;
+	font-size: 4.8rem;
+	color: #323232;
+	letter-spacing: 0.1em;
+	margin: 34px 0px 34px 0px;
+}
+.table{
+	width: 55%;
+	height: 1000px;
+	border-radius: 20px;
+	background-color: white;
+	margin: 0 auto 70px;
+	display: table;
+	padding-top: 50px;
+	padding-bottom: 160px;
+}
+.table dl{
+	display: table-row;
+}
+.table dt,dd{
+	display: table-cell;
+}
+.table dt{
+	vertical-align: middle;
+	width: 160px;
+	color: #323232;
+	font-size: 1.8rem;
+/*	border-bottom: 3px dotted #cccccc;*/
+}
+
+.table dt::before{
+	/*display: block;
+	content: '';
+	position: absolute;
+	background: url(../img/mousikomi_dot.svg)repeat-x;
+	background-size: 6px 2px;
+	transform: translate(0vw,3vw);
+	width: 250px;
+	height: 2px;*/
+}
+.table dd{
+	width: 285px;
+	font-size: 1.6rem;
+	vertical-align: middle;
+}
+.table span{
+	border-bottom: 1px dotted #00a968;
+	display: block;
+	padding: 30px;
+	margin: 0 20px 0 ;
+}
+.table .harai{
+	padding: 110px 30px;
+}
+.table .credit_box{
+	padding: 20px 0 5px;
+}
+.table .credit_border{
+	padding: 20px;
+}
+.meigi{
+	padding: 20px;
+}
+.ipt_text{
+	width: 80%;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+}
+.ipt_choice{
+	border: 1px solid #cccccc;
+	width: 27%;
+	text-align: center;
+	border-radius: 5px;
+}
+
+button{
+	width: 300px;
+	height: 60px;
+	border-radius: 20px;
+	background: #00a968;
+	margin: 50px auto 0 auto;
+	position: absolute;
+	right: 0;
+	left: 0;
+	border-bottom: solid 4px #007549;
+}
+button:active{
+	transform: translateY(4px);
+	border-bottom: none;
+	border-radius: 20px;
+}
+button:hover{
+	background: #00814F;
+}
+button a{
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	font-size: 2.8rem;
+	line-height: 2;
+}
+button a:active{
+	transform: translateY(4px); 
+	border-bottom: none;
+	border-radius: 20px;
+}
+/*フッター*/
+.foot{
+	position: relative;
+	margin-bottom: 50px;
+}
+footer{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 0;
+}
+footer .Nav{
+	margin: 0 auto;
+}
+footer .info{
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row;
+	padding-top: 30px;
+	margin: 80px auto 0;
+	font-size: 1.8rem;
+	color: white;
+	background: #00a968;
+}
+.info .fL{
+	padding-top: 10px;
+	padding-bottom: 40px;
+}
+.info .img_center{
+	position: absolute;
+	right: 0;
+	left: 0;
+	text-align: center;
+}
+.info .fR{
+	padding-top: 25px; 
+}

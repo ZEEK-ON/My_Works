@@ -1,0 +1,298 @@
+	/* 初期設定　*/
+html,body{
+	height: 100%;
+}
+
+html{
+	font-size: 62.5%;
+	box-sizing: border-box;
+	background: #f4f1e9;
+	max-width: 100%;
+}
+
+body{
+	font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","Segoe UI","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+}
+.g2{
+	font-family: GSanSerif-B;
+}
+/* ヘッダー　*/
+.logo img{
+	width: 140px;
+	height: 110px;
+}
+header .logo{
+	margin-top: 30px;
+	transform: translate(-9.5vw,0);
+}
+header{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	height: 150px;
+	width: 100%;
+	margin: 0 auto;
+}
+header .Nav{
+	margin-top: 30px;
+	transform: translate(9.5vw,0);
+}
+.Nav{
+	position: relative;
+	border-radius: 20px;
+	width: 900px;
+	height: 90px;
+	background-color:white;
+	/*後でJS付け加える*/
+	padding : 0 5px 0 5px;
+}
+.Nav ul{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.Nav li{
+	text-align: center;
+	width: 200px;
+	position: relative;
+}
+.Nav li:first-child{
+	width: 260px;
+}
+.Nav li:nth-of-type(2){
+	width: 240px;
+	border-right: none;
+}
+.Nav a{
+	height: 90px;
+	text-decoration: none;
+	line-height: 4.5;
+	color: #00a968;
+	font-size: 2rem;
+	display: block;
+}
+.Nav a:hover{
+	color: #00A920;
+}
+.Nav li::before{
+	display: block;
+	content: '';
+	position: absolute;
+	top: 19px;
+	left: -1px;
+	background: url(../img/navi_dot.svg)repeat-y;
+	background-size: 2px 6px;
+	width: 2px;
+	height: 57px;
+}
+.Nav li:first-child::before{
+	background: none;
+}
+#head_img img{
+	width: 100%;
+}
+/* メイン　*/
+	/*アバウト*/
+#main{
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	position: absolute;
+}
+#about{
+	width: 100%;
+	height: 500px;
+	position: relative;
+	margin: 50px auto;
+}
+.align{
+	text-align: center;
+	font-size: 4.8rem;
+	color: #323232;
+	letter-spacing: 0.1em;
+	margin: 34px 0px 34px 0px;
+}
+#about h3{
+	font-size: 2.6rem;
+	color: #00a968;
+	line-height: 1.5;
+	margin: 28px 0px 28px 0px;
+}
+.align>p{
+	font-size: 2rem;
+	color: #323232;
+	line-height: 1.5;
+	margin: 38px 0px 28px 0px;
+}
+button{
+	width: 350px;
+	height: 60px;
+	border-radius: 20px;
+	background: #00a968;
+	margin: 40px auto 0;
+	position: absolute;
+	right: 0;
+	left: 0;
+	border-bottom: solid 4px #007549;
+}
+button:active{
+	transform: translateY(4px);
+	border-bottom: none;
+	border-radius: 20px;
+}
+button:hover{
+	background: #00814F;
+}
+button a{
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	font-size: 2.8rem;
+	line-height: 2;
+}
+button a:active{
+	transform: translateY(4px);
+	border-bottom: none;
+	border-radius: 20px;
+}
+#about .circle_left{
+	text-align: center;
+	margin: -340px auto;
+}
+#about .circle_right{
+	text-align: center;
+	margin: -530px auto;
+}
+#about .circle01{
+	transform: translate(-35vw,0);
+}
+#about .circle02{
+	transform: translate(-40vw,0);
+}
+.circle02 img{
+	width: 260px;
+	height: 260px;
+}
+#about .circle03{
+	transform: translate(-30vw,0);
+}
+#about .circle04{
+	transform: translate(35vw,0);
+}
+#about .circle05{
+	transform: translate(40vw,0);
+	width: auto;
+}
+.circle05 img{
+	width: 260px;
+	height: 260px
+}
+#about .circle06{
+	transform: translate(30vw,0);
+}
+	/*エフェクト*/
+#efect{
+	width: 100%;
+	margin: 100px  auto -100px;
+}
+#efect h2{
+	line-height: 1.2;
+	margin-bottom: 50px;
+}
+.effect_box{
+	background-color: white;
+	border-radius: 100%;
+	width: 460px;
+	height: 460px;
+	margin: 0 auto;
+}
+.effect_box:nth-of-type(1){
+	transform: translate(-15vw,0);
+}
+.effect_box:nth-of-type(2){
+	transform: translate(15vw,-5.5vw);
+
+}
+.effect_box:nth-of-type(3){
+	transform: translate(-15vw,-11vw);
+}
+#efect h3 p{
+	font-size: 4.8rem;
+	color: #00a968;
+	text-align: center;
+	line-height: 2;
+}
+.effect_box>p{
+	font-size: 2.4rem;
+	color: #323232;
+	text-align: center;
+	line-height: 1.8;
+}
+
+	/*ルーム*/
+#room{
+	width: 100%;
+	height: 770px;
+	position: relative;
+}
+#room h3{
+	font-size: 2.4rem;
+	line-height: 2;
+}
+.flex{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: 95%;
+	margin: 0 auto;
+}
+.intro{
+	font-size: 3.6rem;
+	text-align: center;
+	color: #323232;
+	margin: 0 auto;
+}
+.syoukai{
+	margin: 80px auto 0;
+}
+/*フッター*/
+.foot{
+	position: relative;
+}
+footer{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 0;
+}
+footer .Nav{
+	margin: 0 auto;
+}
+footer .info{
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row;
+	padding-top: 30px;
+	margin: 80px auto 0;
+	font-size: 1.8rem;
+	color: white;
+	background: #00a968;
+}
+.info .fL{
+	padding-top: 10px;
+	padding-bottom: 40px;
+}
+.info .img_center{
+	position: absolute;
+	right: 0;
+	left: 0;
+	text-align: center;
+}
+.info .fR{
+	padding-top: 25px; 
+}
